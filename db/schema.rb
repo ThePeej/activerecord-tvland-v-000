@@ -18,18 +18,18 @@ ActiveRecord::Schema.define(version: 6) do
   end
 
   create_table "characters", force: :cascade do |t|
-    t.string  "name"
+    t.string "name"
     t.integer "show_id"
-    t.text    "catchphrase"
+    t.text "catchphrase"
   end
 
   create_table "networks", force: :cascade do |t|
-    t.string  "call_letters"
+    t.string "call_letters"
     t.integer "channel"
   end
 
   create_table "shows", force: :cascade do |t|
-    t.string  "name"
+    t.string "name"
     t.integer "network_id"
   end
 
